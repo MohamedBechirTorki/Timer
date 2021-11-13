@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+  background-color: white;
+}
+button {
+  cursor: pointer;
+}
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 100px auto;
+  position: relative;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 0 0 2px 1px rgb(201, 201, 201);
+}
+.btn1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgba(255, 48, 33, 0.836);
+  color: white;
+}
+.timer {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.timer div {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 150px;
+}
+.timer span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(206, 206, 206);
+  height: 100px;
+  font-size: 40px;
+  color: #2196f3;
+  font-weight: 600;
+}
+.timer span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(202, 202, 202);
+  color: rgb(126, 126, 126);
+  height: 50px;
+  font-size: 18px;
+}
+.btns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btn2,
+.btn3 {
+  font-size: 20px;
+  border: 2px solid #2196f3;
+  color: #2196f3;
+  margin: 0 10px 10px 0;
+  width: 130px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+.btn2:hover,
+.btn3:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: #2196f3;
+}
+.edit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 400px;
+  height: 200px;
+  border: 2px solid rgb(145, 145, 145);
+  padding: 50px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.edit label,
+.edit input {
+  width: 100px;
+  text-align: center;
+}
+.done {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  background-color: rgba(255, 48, 33, 0.836);
+  color: white;
+  width: 90px;
+  height: 30px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 48, 33, 0.836);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(50%, -50%);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div id="edit" class="edit">
+      <input id="hours" type="number" max="99" min="0" value="0" />
+      <input id="minutes" type="number" max="60" min="0" value="0" />
+      <input id="seconds" type="number" max="60" min="0" value="0" />
+      <label for="hours">Hours</label>
+      <label for="minutes">Minutes</label>
+      <label for="seconds">Seconds</label>
+      <button class="done">Done</button>
+      <button class="close">x</button>
+    </div>
+    <div class="parent">
+      <button id="edit-btn" class="btn1">Edit Timer</button>
+      <div class="timer">
+        <div class="hours"><span id="hrs">00</span><span>Hours</span></div>
+        <div class="minutes"><span id="mnts">00</span><span>Minutes</span></div>
+        <div class="seconds">
+          <span id="scnds">00</span><span>Seconds</span>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn2 start-stop">Start</button>
+        <button class="btn3 reset">Reset</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
