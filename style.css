@@ -18,19 +18,7 @@ button {
   border: 1px solid rgb(201, 201, 201);
   box-shadow: 0 0 2px 1px rgb(201, 201, 201);
 }
-@media (max-width: 610px) {
-  .parent {
-    width: 400px;
-  }
-}
-@media (max-width: 500px) {
-  .parent {
-    width: 300px;
-  }
-  .timer {
-    width: 225px;
-  }
-}
+
 .btn1 {
   position: absolute;
   top: 20px;
@@ -139,4 +127,21 @@ button {
   justify-content: center;
   align-items: center;
   transform: translate(50%, -50%);
+}
+@media (max-width: 610px) {
+  .parent {
+    width: 400px;
+  }
+  .edit {
+    width: 350px;
+  }
+  .edit label,
+  .edit input {
+    width: 75px;
+  }
+}
+@media (max-width: 500px) {
+  .parent {
+    width: 300px;
+  }
 }
