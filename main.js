@@ -72,6 +72,7 @@ startStop.onclick = function () {
         clearInterval(interval);
         alarm.play();
         startStop.textContent = "Start";
+        clearInterval(interval);
         reset.style.cursor = "pointer";
         reset.style.opacity = 1;
       }
