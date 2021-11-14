@@ -71,8 +71,7 @@ startStop.onclick = function () {
       if (difference <= 0) {
         clearInterval(interval);
         alarm.play();
-        startStop.textContent = "Start";
-        clearInterval(interval);
+        this.textContent = "Start";
         reset.style.cursor = "pointer";
         reset.style.opacity = 1;
       }
