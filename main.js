@@ -91,6 +91,8 @@ startStop.onclick = function () {
     clearInterval(interval);
     reset.style.cursor = "pointer";
     reset.style.opacity = 1;
+    editBtn.style.cursor = "pointer";
+    editBtn.style.opacity = 1;
   }
 };
 reset.onclick = function () {
