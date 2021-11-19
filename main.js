@@ -18,8 +18,10 @@ let test = false;
 
 alarm = new Audio("alarm.wav");
 editBtn.onclick = function () {
-  edit.style.display = "grid";
-  parent.style.opacity = 0.5;
+  if (startStop.textContent == "Start") {
+    edit.style.display = "grid";
+    parent.style.opacity = 0.5;
+  }
 };
 
 closeBtn.onclick = function () {
@@ -57,6 +59,8 @@ startStop.onclick = function () {
   if (this.textContent == "Start") {
     reset.style.cursor = "not-allowed";
     reset.style.opacity = 0.5;
+    editBtn.style.cursor = "not-allowed";
+    editBtn.style.opacity = 0.5;
     this.textContent = "Stop";
     let time =
       Number.parseInt(hours.textContent) * 3600 +
