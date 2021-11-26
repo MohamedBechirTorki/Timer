@@ -78,6 +78,9 @@ startStop.onclick = function () {
         startStop.textContent = "Start";
         reset.style.cursor = "pointer";
         reset.style.opacity = 1;
+        editBtn.style.cursor = "pointer";
+        editBtn.style.opacity = 1;
+
       }
       let h = Number.parseInt(difference / 3600);
       let m = Number.parseInt((difference % 3600) / 60);
