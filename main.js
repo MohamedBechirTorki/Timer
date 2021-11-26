@@ -61,7 +61,7 @@ startStop.onclick = function () {
     reset.style.opacity = 0.5;
     editBtn.style.cursor = "not-allowed";
     editBtn.style.opacity = 0.5;
-    this.textContent = "Stop";
+    startStop.textContent = "Stop";
     let time =
       Number.parseInt(hours.textContent) * 3600 +
       Number.parseInt(minutes.textContent) * 60 +
@@ -75,7 +75,7 @@ startStop.onclick = function () {
       if (difference <= 0) {
         clearInterval(interval);
         alarm.play();
-        this.textContent = "Start";
+        startStop.textContent = "Start";
         reset.style.cursor = "pointer";
         reset.style.opacity = 1;
       }
@@ -87,7 +87,7 @@ startStop.onclick = function () {
       seconds.textContent = s > 9 ? s : `0${s}`;
     }, 1000);
   } else {
-    this.textContent = "Start";
+    startStop.textContent = "Start";
     clearInterval(interval);
     reset.style.cursor = "pointer";
     reset.style.opacity = 1;
